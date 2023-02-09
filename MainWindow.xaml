@@ -1,0 +1,58 @@
+﻿<Window x:Class="_1223.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1223"
+        mc:Ignorable="d"
+        MaxHeight="800" MaxWidth="800"
+        MinHeight="150" MinWidth="150"
+        Title="Привет я серега пидр" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" >
+            <TextBlock Name="tb_info" Text="Здесь будет случайное число" />
+            <Button Content="получить число" Click="Button_Click" Padding="15"
+                    Margin="15" />
+            <CheckBox Height="81" />
+            <RadioButton Content="RadioButton"/>
+            <TextBox TextWrapping="Wrap" Text="guygghg" Width="131" Height="32" TextChanged="TextBox_TextChanged"/>
+            <PasswordBox  Password="xxxx"  Width="132" Height="30"/>
+        </StackPanel>
+
+        <Button Click="Button_Click">
+            получить случайное число
+        </Button>
+        <CheckBox Name="cb_eula_agree" 
+                  Content="я прочитал и согласен с пользовательским соглашением"  Click="cb_eula_agree_Click" Margin="165,144,117,181" Grid.Row="1" Grid.Column="1"/>
+        <Button Content="далее"
+                Click="Button_Click"
+                HorizontalAlignment="Left"
+                Margin="13,124,0,0"
+                VerticalAlignment="Top"
+                Background="CadetBlue"
+                Foreground="White"
+                Height="40" Width="100" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="0.5,0.5" >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.951"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        Name
+
+    </Grid>
+</Window>
