@@ -52,7 +52,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        Name
+        
 
     </Grid>
 </Window>
